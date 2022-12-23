@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Добавление поста
+    </title>
+
+    <link rel="stylesheet" href="css/post.css">
+  </head>
+  <body>
+    <header class="header">
+
+      <div class="header-main">
+
+        <div class="header-main-content">
+
+          <div class="header-main-content-logo">
+
+          </div>
+
+          <div class="header-main-content-nav">
+
+            <div class="header-main-content-nav-el">
+            </div>
+
+            <div class="header-main-content-nav-el">
+              <label for="">@UserAccountLogin</label>
+            </div>
+
+            <div class="header-main-content-nav-el">
+              <button type="submit">Новая запись</button>
+            </div>
+
+            <div class="header-main-content-nav-el">
+              <a href="">Выйти</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </header>
+    <main class="main">
+      <div class="main-content">
+        <h1>Добавить запись</h1>
+        <form action="" method="post">
+          <div class="form-content">
+            <div class="form-content-head">
+              <label for="">Заголовок</label>
+              <input maxlength="255" type="text">
+            </div>
+            <div class="form-content-text">
+              <label for="text">Текст</label>
+              <textarea name="text" id="text">
+                
+              </textarea>
+            </div>
+            <div class="form-content-select">
+              <label for="category">Выберите категорию</label>
+              <select name="category" id="category">
+                <option value="0">без категории</option>
+                <option value="1">first</option>
+                <option value="2">second</option>
+                <option value="3">third</option>
+              </select>
+            </div>
+            <div class="input-file">
+              <input type="file" id="input" multiple accept="image/*">
+              <label for="input">
+                <span>Прикрепить файл изображения</span>
+              </label>
+            </div>
+            <div class="button">
+              <button type="submit">Опубликовать</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-main-content">
+          <div class="footer-main-content-nav">
+            <a href="">Об авторе</a>
+            <a href="">Технологии</a>
+          </div>
+          <div class="footer-main-content-label">
+            <label for="">© blog, 2022</label>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

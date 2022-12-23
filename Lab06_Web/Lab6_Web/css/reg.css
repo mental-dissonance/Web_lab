@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body *{
+    outline: none;
+}
+
+.header{
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.header-main{
+    position: relative;
+    margin: auto 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-main-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-main-content-logo{
+    width: 300px;
+    height: 70px;
+}
+
+.header-main-content-nav{
+    width: max-content;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-main-content-nav-el{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.header-main-content-nav-el a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header-main-content-nav-el button{
+    background-color: white;
+    color: blueviolet;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+}
+
+.header-main-content-nav-el a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.main{
+    background-color: rgb(238, 234, 234);
+    display: flex;
+    justify-content: center;
+}
+
+.main-content{
+    /*position: relative;*/
+    /*margin: auto 100px;*/
+    width: 89.5%;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+form{
+    width: 100%;
+    height: max-content;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.form-content{
+    padding: 60px 50px;
+    height: max-content;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info > div, .info > input{
+    box-sizing: border-box;
+}
+
+.input-label{
+    color: lightslategray;
+}
+
+.left, .right{
+    min-width: 50%;
+}
+
+.left{
+    padding-right: 30px;
+}
+
+.right{
+    padding-left: 30px;
+}
+
+.name, .pass, .checkbox{
+    margin-bottom: 20px;
+}
+
+.login{
+    margin-bottom: 100px;
+}
+
+.input-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#firstname,
+#surname,
+#login,
+#email{
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    height: 80px;
+    font-size: 36px;
+    text-indent: 10px;
+    width: 100%;
+}
+
+#password,
+#password-second{
+    border-radius: 5px;
+    height: 80px;
+    font-size: 36px;
+    text-indent: 10px;
+    width: 100%;
+}
+
+.button *{
+    background-color: blueviolet;
+    color: white;
+    width: 15%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.footer{
+    height: 100px;
+    background-color: rgb(238, 234, 234);
+}
+
+.footer-main{
+    position: relative;
+    margin: auto 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-main-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-main-content-nav a{
+    margin-right: 50px;
+}
+
+.footer-main-content-label{
+    margin-left: auto;
+    color: rgb(84, 84, 84);
+}
+
+#errors{
+    display: none;
+    margin: 15px 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#errors p{
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -10px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -10px;
+    content: "✖";
+}
+
+.pass-standard{
+    border: 1px solid lightslategray;
+}
+
+.pass-invalid{
+    border: 1px solid red;
+}
+
+.pass-valid{
+    border: 2px solid green;
+}
+
+/*------------------------------------------------------*/
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-login{
+    margin-bottom: 10px;
+}
+
+.modal-password{
+    margin-bottom: 20px;
+}
+
+.modal-login input, .modal-password input{
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    height: 70px;
+    font-size: 36px;
+    text-indent: 10px;
+    width: 440px;
+} 
+
+.modal-submit button{
+    background-color: blueviolet;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.modal-submit a{
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(138, 43, 226);
+    text-decoration: none;
+}
+
+.modal-head{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.modal-head h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.modal-button {
+    cursor: pointer;
+    border: none;
+    font-size: 30px;
+    margin-left: auto;
+    background-color: white;
+    z-index: 5;
+}
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(138, 43, 226, 0.3);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
